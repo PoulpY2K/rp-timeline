@@ -68,12 +68,12 @@ async function run() {
   );
 
   // Let's start the bot
-  if (!process.env.BOT_TOKEN) {
-    throw Error("Could not find BOT_TOKEN in your environment");
+  if (!process.env.BOT_TOKEN_TIMELINE) {
+    throw Error("Could not find BOT_TOKEN_TIMELINE in your environment");
   }
 
   // Log in with your bot token
-  await bot.login(process.env.BOT_TOKEN);
+  await bot.login(process.env.BOT_TOKEN_TIMELINE);
 
   // ************* rest api section: start **********
 
